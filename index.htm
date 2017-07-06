@@ -22,15 +22,31 @@
     </style>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./skeleton.css">
+    <script src="https://use.fontawesome.com/b27aaaa8ab.js"></script>
+    <script>
+      i=true;
+      function show(){
+        if(i==true){
+          i=false;
+          document.getElementById("hidden").style.display="block";
+        }
+        else{
+          i=true;
+          document.getElementById("hidden").style.display="none";
+        }
+      }      
+    </script>
   </head>
   <body>
     <div style="text-align:center">
 
       <h1>Sean Paul Payne Dinwiddie</h1>
       
+      <div><a onclick="show();" style="cursor:pointer;font-weight:bold;text-decoration:underline;">$$$ Pay me $$$</a></div>
+      
       <hr>
       
-      <form name="_xclick" action="https://www.paypal.com/yt/cgi-bin/webscr" method="post" style="_display:none">
+      <form name="_xclick" action="https://www.paypal.com/yt/cgi-bin/webscr" method="post" style="display:none"  id="hidden">
         <input type="hidden" name="cmd" value="_xclick">
         <input type="hidden" name="business" value="seandinwiddie@charter.net">
         <input type="hidden" name="item_name" value="Gift">
@@ -64,6 +80,11 @@
       <div>
         <h3><a href="./redding-water-time/" target="_blank">Redding Water Time</a></h3>
         <p>The watering times of Redding, CA- during our last "drought".</p>
+      </div>
+      
+      <div>
+        <a href="https://github.com/seandinwiddie" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/seandinwiddie" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
       </div>
       
       <h3><a href="./resume/">Resume</a></h3>
