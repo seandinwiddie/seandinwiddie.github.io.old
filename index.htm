@@ -7,91 +7,87 @@
     <style>
       @font-face {
         font-family:"MiloOT-Medi";
-        src:url("http://seand.o-s-v.xyz/MiloOT-Medi.woff") format('woff');
+        src:url("./MiloOT-Medi.woff") format('woff');
       }
       *{
-        //font-family:"MiloOT-Medi",sans-serif;
+        font-family:"MiloOT-Medi",sans-serif;
         //font-size: larger;
       }
       html{//background:silver;}
       ul{
-        list-style-type:none !important;
+        list-style-type:none;
         //list-style-position:inside;
       }
-      h2{
-        text-transform: uppercase;
-      }
     </style>
-    <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="../skeleton.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./skeleton.css">
+    <script src="https://use.fontawesome.com/b27aaaa8ab.js"></script>
+    <script>
+      i=true;
+      function show(){
+        if(i==true){
+          i=false;
+          document.getElementById("hidden").style.display="block";
+        }
+        else{
+          i=true;
+          document.getElementById("hidden").style.display="none";
+        }
+      }      
+    </script>
   </head>
   <body>
     <div style="text-align:center">
 
       <h1>Sean Paul Payne Dinwiddie</h1>
       
-      <hr>
-
-      <h5>Resume</h5>
+      <div><a onclick="show();" style="cursor:pointer;font-weight:bold;text-decoration:underline;">Send Funds</a></div>
       
       <hr>
       
-      <button onclick="window.print()">Print</button>
-
-      <h2>Exercised Skills</h2>
-      <ul>
-        <li>
-          <h3>
-            Web &amp; Software Architecture, Engineering, Design, and Development
-            <br>
-            w/ Technology Support
-          </h3>
-        <ul>
-          <li><h4>Data</h4> : SQL, JSON, Flat file</li>
-          <li><h4>Administration</h4> : JavaScript, PHP, Java, C, Python, Bash, Git, etc</li>
-          <li><h4>Interface</h4> : HTML, CSS, JavaScript</li>
-          <li><h4>Systems</h4> : *nix, Windows</li>
-          <li><h4>Other</h4> : SEO</li>
-          <li><h4>Software</h4> : Adobe, Autodesk, MS Office, WordPress</li>
-        </ul></li>
-      </ul>
-      <br>
-      <h2>Elaboration</h2>
-      <p>Work on large-scale, non-profit down to small, service-based sites/applications( including member/administrator portals and complex inventory applicatory analys). Let us speak about inplementing real-world statistics by means of scenario forecasting with only the required micro-processes, while creating immense satisfation; data acquisition leading infrastructure, following a determined outcome of robust flexibility without loss.</p>
-      <p>Reverse engineer the relationship between data and reception, with finesse. Gather, compute and render via automation and clear, tangible engagement. Streamline enabling satisfaction. Ask opinions or give instructions- like to talk about it? I know that I do.</p>
-      <br>
-      <h2>Contact</h2>
-      <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Snail_mail" target="_blank">2434 Delta Pl, 96002</a></li>
-        <li><a href="tel:15306383238">+1 530 638 3238</a></li>
-        <li><a href="mailto:seandinwiddie@gmail.com">seandinwiddie@gmail.com</a></li>
-      </ul>
-      <br>
-      <h2>Marathon Commissioners( Employers, Tech Industry)</h2>
-      <ul>
-        <li><h3><a target="_blank" href="../">Self Employed</a></h3> : 1995 - Present</li>
-        <li><h3><a target="_blank" href="https://optimizeworldwide.com/">Optimize Worldwide</a></h3> : 2016 - 2017</li>
-        <li><h3><a target="_blank" href="http://veritascdh.com/">Veritas Health Systems</a> / <a target="_blank" href="http://inovius.com/">Inovius</a> / <a target="_blank" href="http://myveritashealth.com/amotas/">Amotas</a></h3> : 2011 - 2014</li>
-        <li><h3><a target="_blank" href="https://www.google.com/search?q=n-space">n-Space</a></h3> : 2008 - 2009</li>
-        <li><h3><a target="_blank" href="https://www.google.com/search?q=semi+logic+entertainments">Semi Logic Entertainments</a></h3> : 2005 - 2007</li>
-        <li><h3><a target="_blank" href="https://www.google.com/search?q=network+business+machines">Network Business Machines</a></h3> : 2002 - 2005</li>
-        <li><h3><a href="#">Elaine's Exotic Beautiful Birds</a></h3> : 1998 - 2002 </li>
-      </ul>
-      <br>
-      <h2>Accredited Education</h2>
-      <ul>
-        <li><h4><a target="_blank" href="http://www.shastacollege.edu/">Shasta College</a></h4> : 2000 - 2001 / 2015</li>
-        <li><h4><a href="#">The Dinwiddie School of Higher Education</a></h4> : 1991 - 2001</li>
-        <li><h4><a target="_blank" href="http://www.redwoodchristianschool.net/">Eureka Nazarene School</a></h4> : 1989 - 1991</li>
-      </ul>
-      <br>
-      <h2>Recreational Activities</h2>
-      <ul>
-        <li><h4>Family & Friendships</h4></li>
-        <li><h4>Reading & Writing</h4></li>
-      </ul>
+      <form name="_xclick" action="https://www.paypal.com/yt/cgi-bin/webscr" method="post" style="display:none"  id="hidden">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="seandinwiddie@charter.net">
+        <input type="hidden" name="item_name" value="Gift">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="number" name="amount" value="140.00">
+        <input type="submit" border="0" value="sendTo: $$$@seandinwiddie" alt="Make payments with PayPal - it's fast, free and secure!">
+      </form>
+      
       <hr>
-      <h2><a target="_blank" href="http://radding.org">RADD</a></h2>
+      
+      <p>Doing a lot of work in Server Architecture, some in App Production, and also SEO, as well as the usual Web Development, even tempted myself again with some 3D Modeling the other day. Please drop me a line regarding any development inquires.</p>
+      
+      <h3>My skills include, but are not limited to:</h3>
+      <ul>
+        <li><h2>Graphic, Motion, and Code Design</h2></li>
+        <li><h2>Programming, Scripting, and Markup</h2></li>
+        <li><h2>Desktop, Web, and Mobile Technologies</h2></li>
+      </ul>
+      
+      <p>I have over 10 years of professional experience in software engineering and application development. I really enjoy programming interactive plan scenario calculators and simulators; CMSes, static sites, and projects for print are also a joy to work on.</p>
+      
+      <hr>
+      
+      <h3 style="display:none"><a href="https://optimizeworldwide.com/">Optimize Worldwide</a></h3>
+      <a href="https://blog.kissmetrics.com/landing-page-design-infographic/" style="display:none">
+        The Anatomy Of A Perfect Landing Page
+      </a>
+      
+      <hr>
+      
+      <div>
+        <h3><a href="./redding-water-time/" target="_blank">Redding Water Time</a></h3>
+        <p>The watering times of Redding, CA- during our last "drought".</p>
+      </div>
+      
+      <div>
+        <a href="https://github.com/seandinwiddie" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/seandinwiddie" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/seandinwiddie/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+      
+      <h3><a href="./resume/">Resume</a></h3>
       
     </div>
   </body>
